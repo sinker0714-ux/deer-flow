@@ -106,6 +106,11 @@ Regression tests related to Docker/provisioner behavior:
 Boundary check (harness → app import firewall):
 - `tests/test_harness_boundary.py` — ensures `packages/harness/deerflow/` never imports from `app.*`
 
+Learning track fixtures:
+- `docs/BACKEND_LEARNING_WALKTHROUGH.md` maps the backend learning route through request flow, middleware, skills, MCP, sandbox, and memory.
+- `tests/test_learning_*.py` contains deliberately small, readable tests for weekly learning checkpoints.
+- `examples/learning_skills/` and `examples/learning_mcp/` are non-production examples used by the learning tests and documentation.
+
 CI runs these regression tests for every pull request via [.github/workflows/backend-unit-tests.yml](../.github/workflows/backend-unit-tests.yml).
 
 ## Architecture

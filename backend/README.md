@@ -405,7 +405,16 @@ uv run pytest
 - [Path Examples](docs/PATH_EXAMPLES.md)
 - [Context Summarization](docs/summarization.md)
 - [Plan Mode](docs/plan_mode_usage.md)
+- [Backend Learning Walkthrough](docs/BACKEND_LEARNING_WALKTHROUGH.md)
 - [Setup Guide](docs/SETUP.md)
+
+### Learning Fixtures
+
+The backend includes small learning-oriented fixtures that do not change the production request path:
+
+- `tests/test_learning_*.py` - focused checks for ThreadState reducers, tool-error recovery, skill loading, and MCP config shape
+- `examples/learning_skills/` - a repository-reading skill fixture that can be loaded with the normal skills parser/loader
+- `examples/learning_mcp/` - a disabled-by-default local MCP example for read-only backend source navigation
 
 ---
 

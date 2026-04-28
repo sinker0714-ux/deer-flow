@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "learning-repo-reader": {
+      "enabled": false,
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "backend/examples/learning_mcp/repo_reader_server.py"
+      ],
+      "env": {},
+      "description": "Local learning-only MCP server that exposes read-only DeerFlow backend source navigation tools."
+    }
+  },
+  "skills": {
+    "repository-reading-assistant": {
+      "enabled": true
+    }
+  }
+}
